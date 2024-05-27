@@ -1,0 +1,16 @@
+لتثبيت التطبيق مباشرة على جهازك، يمكنك اتباع الخطوات التالية لتحويل مشروعك إلى ملف APK يمكن تثبيته:
+
+### 1. بناء المشروع
+- افتح **Android Studio**.
+- تأكد من أن مشروعك يعمل بشكل صحيح بدون أخطاء.
+
+### 2. إعداد ملف التكوين
+- افتح ملف `build.gradle` (Module: app) وتأكد من إعداد الإصدار بالشكل الصحيح:
+
+```groovy
+android {
+    compileSdkVersion 31
+    defaultConfig {
+        applicationId "com.yourpackage.newsapp"
+        minSdkVersion 21
+        targetSdkVersion 31
